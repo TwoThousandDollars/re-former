@@ -1,0 +1,16 @@
+<body style="padding:55px">
+    <%= form_with model: @user do |form| %>
+    
+        <%= form.label :username, "Username:" %>
+        <%= form.text_field :username %>
+
+        <%= form.label :email, "Email:" %>
+        <%= form.email_field :email %>
+
+        <%= form.label :password, "Password:" %>
+        <%= form.password_field :password %>
+            
+        <%= form.submit "Submit" %>
+
+    <% end %>
+</body>
